@@ -9,7 +9,9 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    @IBOutlet weak var button: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,9 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func buttonPressed(sender: AnyObject) {
+        print("hello!")
+    }
 
 }
 
