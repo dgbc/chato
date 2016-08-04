@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -22,7 +23,12 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" id="BOF-NM-1cW">
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -670,12 +676,12 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="chato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-O9-aUl">
-                                <rect key="frame" x="164" y="77" width="81" height="32"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lyK-hv-3VC">
+                                <rect key="frame" x="235" y="13" width="158" height="32"/>
+                                <buttonCell key="cell" type="push" title="A" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lyK-hv-3VC">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -683,15 +689,109 @@
                                     <action selector="buttonPressed:" target="XfG-lQ-9wD" id="wMC-uf-2QI"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-KP-zzB">
+                                <rect key="frame" x="18" y="25" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="4Ma-On-4by">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGj-iR-iFX">
+                                <rect key="frame" x="385" y="14" width="81" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GCl-kl-boJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="7ER-e8-MnI" kind="modal" id="PTV-6d-rZf"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyX-as-09d">
+                                <rect key="frame" x="70" y="20" width="163" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="lwt-5U-fTk">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="allowed" translatesAutoresizingMaskIntoConstraints="NO" id="9s5-jQ-WIy">
+                                <rect key="frame" x="11" y="50" width="449" height="215"/>
+                                <clipView key="contentView" id="gKZ-jS-qIX">
+                                    <rect key="frame" x="1" y="1" width="432" height="213"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="EaB-2c-NUb">
+                                            <rect key="frame" x="0.0" y="0.0" width="432" height="213"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="432" height="213"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="432" height="213"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9s5-jQ-WIy" secondAttribute="height" multiplier="449:215" id="5kP-Bn-qW7"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="5yq-dC-X0E">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="uXQ-UT-049">
+                                    <rect key="frame" x="433" y="1" width="15" height="213"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="wyX-as-09d" firstAttribute="top" secondItem="9s5-jQ-WIy" secondAttribute="bottom" constant="8" id="AmP-Q2-C7f"/>
+                            <constraint firstItem="9s5-jQ-WIy" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="6" id="TKu-3t-5is"/>
+                            <constraint firstItem="wyX-as-09d" firstAttribute="top" secondItem="9s5-jQ-WIy" secondAttribute="bottom" constant="8" id="U9c-eW-Xqg"/>
+                            <constraint firstAttribute="trailing" secondItem="9s5-jQ-WIy" secondAttribute="trailing" constant="20" id="hMI-eb-TV7"/>
+                            <constraint firstItem="9s5-jQ-WIy" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="11" id="nns-hI-acD"/>
+                            <constraint firstAttribute="trailing" secondItem="9s5-jQ-WIy" secondAttribute="trailing" constant="20" id="wi1-dI-vMe"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="XKM-O9-aUl" id="cwb-Uc-ojt"/>
+                        <outlet property="buttonA" destination="XKM-O9-aUl" id="SMj-Iw-NV0"/>
+                        <outlet property="label" destination="gt7-KP-zzB" id="ajm-hC-SCE"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="655.5"/>
+        </scene>
+        <!--Temp Window View Controller-->
+        <scene sceneID="ShA-Px-NYE">
+            <objects>
+                <viewController id="7ER-e8-MnI" customClass="TempWindowViewController" customModule="chato" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="awh-Dp-c7o">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jm3-zS-gjC">
+                                <rect key="frame" x="307" y="24" width="128" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="Close ?" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KUz-Qc-65g">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonPressed:" target="7ER-e8-MnI" id="We5-7W-9XJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="buttonClose" destination="Jm3-zS-gjC" id="Kwi-xC-Jf6"/>
+                    </connections>
+                </viewController>
+                <customObject id="sHW-Br-Nt2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="603"/>
         </scene>
     </scenes>
 </document>

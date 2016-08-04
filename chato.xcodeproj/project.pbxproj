@@ -14,6 +14,7 @@
 		696F59171D535AA900F66C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696F59151D535AA900F66C22 /* Main.storyboard */; };
 		696F59221D535AA900F66C22 /* chatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F59211D535AA900F66C22 /* chatoTests.swift */; };
 		696F592D1D535AA900F66C22 /* chatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F592C1D535AA900F66C22 /* chatoUITests.swift */; };
+		696F593B1D53860F00F66C22 /* TempWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F593A1D53860E00F66C22 /* TempWindowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		696F59281D535AA900F66C22 /* chatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		696F592C1D535AA900F66C22 /* chatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatoUITests.swift; sourceTree = "<group>"; };
 		696F592E1D535AA900F66C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696F593A1D53860E00F66C22 /* TempWindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempWindowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				696F590C1D535AA800F66C22 /* AppDelegate.swift */,
 				696F590E1D535AA800F66C22 /* ViewController.swift */,
+				696F593A1D53860E00F66C22 /* TempWindowViewController.swift */,
 				696F59131D535AA800F66C22 /* Assets.xcassets */,
 				696F59151D535AA900F66C22 /* Main.storyboard */,
 				696F59181D535AA900F66C22 /* Info.plist */,
@@ -257,6 +260,7 @@
 			files = (
 				696F590F1D535AA800F66C22 /* ViewController.swift in Sources */,
 				696F590D1D535AA800F66C22 /* AppDelegate.swift in Sources */,
+				696F593B1D53860F00F66C22 /* TempWindowViewController.swift in Sources */,
 				696F59121D535AA800F66C22 /* chato.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

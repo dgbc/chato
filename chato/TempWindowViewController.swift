@@ -8,34 +8,28 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class TempWindowViewController: NSViewController {
     
+    
+    @IBOutlet weak var buttonClose: NSButton!
 
-    
-    @IBOutlet weak var label: NSTextField!
-    @IBOutlet weak var buttonA: NSButton!
-    @IBOutlet weak var buttonB: NSButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override var representedObject: AnyObject? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 
     @IBAction func buttonPressed(sender: NSButton) {
-        print("hello!")
-        let title = sender.title
-        print(title)
-        label.stringValue = title
         
+        print("pressed");
+        self.dismissViewController(self);
     }
-
+    
 }
 
